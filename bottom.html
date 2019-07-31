@@ -53,59 +53,48 @@
 
   <br><br>
 
-
-  <div class="row">
-    <div class="col s12 m6 16 center">
+<div class="row">
+  <div class="col s12 m4">
+    <div class="col s6 m6">
+      <div class="row"></div>
+      <div class="row"></div>
       <a class=" waves-effect waves-light btn #2e7d32 green darken-3" onclick=saluda(1)>Press</a>
+      <div class="row"></div>
+      <div class="row"></div>
+      <a class=" waves-effect waves-light btn #78909c blue-grey darken-4" onclick=saluda(2)>Press</a>
     </div>
-    <div class="col s12 m6 16 center">
-      <a class=" waves-effect waves-light btn #f57f17 yellow darken-4" onclick=saluda(2)>Press</a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12 m6 16 center">
-      <a class=" waves-effect waves-light btn #78909c blue-grey lighten-1" onclick=saluda(3)>Press</a>
-    </div>
-
-
-    <div class=" col s12 m6 16 center" onclick=saluda(4)>
-      <a class=" waves-effect waves-light btn">See all of them</a>
+    <div class="col s6 m6">
+      <div class="row"></div>
+      <div class="row"></div>
+      <a class=" waves-effect waves-light btn #78909c blue-grey" onclick=saluda(3)>Press</a>
+      <div class="row"></div>
+      <div class="row"></div>
+      <a class=" waves-effect waves-light btn #01579b light-blue darken-4" onclick=saluda(4)>Show</a>
     </div>
   </div>
 
-
-  <br><br>
-  <div class="row">
-    <div class="col s6">
-      <div class="col s12 m6">
-        <div class="card-panel #2e7d32 green darken-3 center" id='card1'>
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
-        </div>
+  <div class="col s6 m8">
+    <div class="col s6 m4">
+      <div class="card-panel #2e7d32 green darken-3" id='card1'>
+        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+        </span>
       </div>
     </div>
-
-    <div class="col s6">
-      <div class="col s12 m6">
-        <div class="card-panel #f57f17 yellow darken-4 center" id='card2'>
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
-        </div>
+    <div class="col s6 m4">
+      <div class="card-panel #78909c blue-grey darken-4" id='card2'>
+        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+        </span>
       </div>
     </div>
-    <div class="col s6">
-      <div class="col s12 m6">
-        <div class="card-panel teal #78909c blue-grey lighten-1 center" id='card3'>
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
-        </div>
+    <div class="col s6 m4">
+      <div class="card-panel #78909c blue-grey" id='card3'>
+        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+        </span>
       </div>
     </div>
-
   </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -149,10 +138,10 @@
         presentacion.style.display = "none"
         saludo.style.display = "none"
         intro.style.display = "block"
-        // window.alert(n)
+
       } else if (n == 4) {
         presentacion.style.display = "block"
-        saludo.style.display = "block";
+        saludo.style.display = "block"
         intro.style.display = "block"
       } else;
     }
