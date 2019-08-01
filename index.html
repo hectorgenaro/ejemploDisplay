@@ -35,8 +35,8 @@
         <div class="card-panel #424242 grey darken-3">
           <span class="white-text center">
             <h2 class="algo" id='title'> Properties</h2>
-            <h3 class ="algo">Cases</h3>
-            <div class="row"><a class= "waves-effect waves-light btn #2e7d32 green darken-3">Press</a></div>
+            <h3 class="algo">Cases</h3>
+            <div class="row"><a class="waves-effect waves-light btn 0277bd light-blue darken-3" id='pinch'>Press</a></div>
           </span>
         </div>
       </div>
@@ -57,34 +57,34 @@
       <div class="col s6 m6" style="margin-bottom: 30px;">
 
         <div class="row"></div>
-        <div class="row"><a class= "waves-effect waves-light btn #2e7d32 green darken-3" onclick='saluda(1)'>Press</a></div>
+        <div class="row"><a class="waves-effect waves-light btn #2e7d32 green darken-3" onclick='saluda(1)'>Press</a></div>
         <div class="row"></div>
-        <div class="row"> <a class= "waves-effect waves-light btn #78909c blue-grey darken-4" onclick='saluda(2)'>Press</a></div>
+        <div class="row"> <a class="waves-effect waves-light btn #78909c blue-grey darken-4" onclick='saluda(2)'>Press</a></div>
       </div>
       <div class="col s6 m6">
         <div class="row"></div>
-        <div class="row"><a class= "waves-effect waves-light btn #78909c blue-grey" onclick='saluda(3)'>Press</a></div>
+        <div class="row"><a class="waves-effect waves-light btn #78909c blue-grey" onclick='saluda(3)'>Press</a></div>
         <div class="row"></div>
-        <div class="row"><a class= "waves-effect waves-light btn #01579b light-blue darken-4"id='buttom1' onclick='saluda(4)'>Show</a></div>
+        <div class="row"><a class="waves-effect waves-light btn #01579b light-blue darken-4" id='buttom1' onclick='saluda(4)'>Show</a></div>
       </div>
     </div>
     <div class="col s12 m8">
       <div class="col s12 m4">
         <div class="card-panel #2e7d32 green darken-3" id='card1'>
-          <span class="white-text">I am a very simple card. When you press the buttom of my color you see the content inside of me but be careful I has
+          <span class="white-text">I am a very simple card. When you press the buttom of my color you see the content inside of me but be careful it has
             to be the button from the same color.
           </span>
         </div>
       </div>
       <div class="col s12 m4">
         <div class="card-panel #78909c blue-grey darken-4" id='card2'>
-          <span class="white-text">I am a very simple card. When you press the buttom of my color you see the content inside of me but be careful I has
+          <span class="white-text">I am a very simple card. When you press the buttom of my color you see the content inside of me but be careful it has
             to be the button from the same color.
         </div>
       </div>
       <div class="col s12 m4">
         <div class="card-panel #78909c blue-grey" id='card3'>
-          <span class="white-text">I am a very simple card. When you press the buttom of my color you see the content inside of me but be careful I has
+          <span class="white-text">I am a very simple card. When you press the buttom of my color you see the content inside of me but be careful it has
             to be the button from the same color.
           </span>
         </div>
@@ -95,16 +95,21 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
 
-      // const materialize = document.getElementById('item1')
-      // // materialize.innerHTML='this is the fucking DOM'
+      const materialize = document.getElementById('item1')
+      materialize.addEventListener('click',function(){
+        if (materialize.style.display != 'none')
+      materialize.innerHTML='There is anything of information for you here'
+      else{
+        materialize.innerHTML='Materialize'
+      }
+      })
       // const bootstrap = document.getElementById('item2')
       // console.log(bootstrap)
       // const jquery = document.getElementById('item3')
       // console.log(jquery)
       // const react = document.getElementById('item4')
       // react.innerHTML = 'here you find the answer'
-      // const title = document.getElementById('title')
-      // title.innerHTML = 'this is the fucking DOM'
+      //
       // const lista = document.getElementsByClassName('collection-item')
       // for (i = 0; i < lista.length; i++) {
       //   let element = lista[i];
@@ -136,18 +141,24 @@
           intro.style.display = "block"
 
         } else if (n == 4) {
-          presentacion.style.display ="block"
+          presentacion.style.display = "block"
           saludo.style.display = "block"
           intro.style.display = "block"
         } else;
       }
 
-      const titulo = document.querySelector('.container')
-      titulo.addEventListener('click', function (){
+      const encabezado = document.getElementById('title')
+      const boton = document.getElementById('pinch')
+      boton.addEventListener('click', function() {
 
-      titulo.style.display= "none"
+        if (encabezado.style.display != "none") {
+          encabezado.style.display = "none"
+          encabezado.style.display = "none"
+        } else {
+          encabezado.style.display = "block"
+          encabezado.style.display = "block"
+        }
       })
-
     </script>
 </body>
 
