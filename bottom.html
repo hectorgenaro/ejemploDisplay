@@ -34,9 +34,9 @@
       <div class="col s12 m12 l12">
         <div class="card-panel #424242 grey darken-3">
           <span class="white-text center">
-            <h2 class='algo' id='title'> Properties</h2>
-            <h3 class ='algo'>Cases</h3>
-            <div class="row"><a class= "waves-effect waves-light btn #2e7d32 green darken-3" onclick='function()'>Press</a></div>
+            <h2 class="algo" id='title'> Properties</h2>
+            <h3 class ="algo">Cases</h3>
+            <div class="row"><a class= "waves-effect waves-light btn #2e7d32 green darken-3">Press</a></div>
           </span>
         </div>
       </div>
@@ -57,15 +57,15 @@
       <div class="col s6 m6" style="margin-bottom: 30px;">
 
         <div class="row"></div>
-        <div class="row"><a class= "waves-effect waves-light btn #2e7d32 green darken-3" onclick=saluda(1)>Press</a></div>
+        <div class="row"><a class= "waves-effect waves-light btn #2e7d32 green darken-3" onclick='saluda(1)'>Press</a></div>
         <div class="row"></div>
-        <div class="row"> <a class= "waves-effect waves-light btn #78909c blue-grey darken-4" onclick=saluda(2)>Press</a></div>
+        <div class="row"> <a class= "waves-effect waves-light btn #78909c blue-grey darken-4" onclick='saluda(2)'>Press</a></div>
       </div>
       <div class="col s6 m6">
         <div class="row"></div>
-        <div class="row"><a class= "waves-effect waves-light btn #78909c blue-grey" onclick=saluda(3)>Press</a></div>
+        <div class="row"><a class= "waves-effect waves-light btn #78909c blue-grey" onclick='saluda(3)'>Press</a></div>
         <div class="row"></div>
-        <div class="row"><a class= "waves-effect waves-light btn #01579b light-blue darken-4" onclick=saluda(4) id='buttom1'>Show</a></div>
+        <div class="row"><a class= "waves-effect waves-light btn #01579b light-blue darken-4"id='buttom1' onclick='saluda(4)'>Show</a></div>
       </div>
     </div>
     <div class="col s12 m8">
@@ -94,6 +94,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
+
       // const materialize = document.getElementById('item1')
       // // materialize.innerHTML='this is the fucking DOM'
       // const bootstrap = document.getElementById('item2')
@@ -114,8 +115,8 @@
       //   let etiqueta = options[i]
       //   // console.log(etiqueta)
       //   // element.style.background ='#f2f2f2';
+      //   }
 
-      // }
       const presentacion = document.getElementById('card1')
       const saludo = document.getElementById('card2')
       const intro = document.getElementById('card3')
@@ -135,11 +136,17 @@
           intro.style.display = "block"
 
         } else if (n == 4) {
-          presentacion.style.display = "block"
+          presentacion.style.display ="block"
           saludo.style.display = "block"
           intro.style.display = "block"
         } else;
       }
+
+      const titulo = document.querySelector('.container')
+      titulo.addEventListener('click', function (){
+
+      titulo.style.display= "none"
+      })
 
     </script>
 </body>
