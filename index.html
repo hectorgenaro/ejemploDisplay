@@ -97,10 +97,12 @@
 
       const materialize = document.getElementById('item1')
       materialize.addEventListener('click',function(){
-        if (materialize.style.display != 'none')
-      materialize.innerHTML='There is anything of information for you here'
-      else{
+        if (materialize.style.display != 'none'){
+          materialize.innerHTML='There is anything of information here for you'
+        }
+      else if (materialize.style.display != 'block'){
         materialize.innerHTML='Materialize'
+
       }
       })
       // const bootstrap = document.getElementById('item2')
