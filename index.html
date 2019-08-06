@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <title>test</title>
 </head>
-<style>
+<!-- <style>
 
   #move {
 
@@ -23,7 +23,7 @@ animation: myfirst 5s linear 2s infinite alternate;
 }
 
   }
-</style>
+</style> -->
 <body>
   <header>
     <nav>
@@ -59,9 +59,9 @@ animation: myfirst 5s linear 2s infinite alternate;
   <div class="row">
     <div class="col s12 offset-m1 m10 collection blue-text" id='move'>
       <a href="#!" class="collection-item blue-text" id='item1'>Materialize</a>
-      <a href="#!" class="collection-item blue-text" id='item1'>Bootstrap</a>
-      <a href="#!" class="collection-item blue-text" id='item1'>Jquery</a>
-      <a href="#!" class="collection-item blue-text" id='item1'>React</a>
+      <a href="#!" class="collection-item blue-text" id='item2'>Bootstrap</a>
+      <a href="#!" class="collection-item blue-text" id='item3'>Jquery</a>
+      <a href="#!" class="collection-item blue-text" id='item4'>React</a>
     </div>
   </div>
 
@@ -117,13 +117,16 @@ animation: myfirst 5s linear 2s infinite alternate;
 
 
       const materialize = document.getElementById('item1')
-      materialize.addEventListener('click', function() {
+      const tabla = document.getElementById('move')
+      tabla.addEventListener('click', function() {
 
         if (materialize.style.display != 'none') {
-        materialize.innerHTML='There is anything for you'
-        
-        } else {
-          materialize.innerHTML = 'checkout here'
+        // materialize.innerHTML='There is anything for you'
+        materialize.style.display = 'none'
+        materialize.style.display = 'none'
+      } else {
+        materialize.style.display = 'block'
+        materialize.style.display = 'block'
 
         }
       })
