@@ -11,13 +11,24 @@
   <meta charset="utf-8">
   <title>test</title>
 </head>
+<style>
 
+  #move {
+
+position: relative;
+animation: myfirst 5s linear 2s infinite alternate;
+@keyframes myfirst {
+0% {left: 0px; top: 0px;}
+25% {left: 200px; top: 0px;}
+}
+
+  }
+</style>
 <body>
-
   <header>
     <nav>
       <div class="nav-wrapper #424242 grey darken-3">
-        <a href="#" class="brand-logo" ><img src="images/logo.png" style="width:29%;" alt="#"></a>
+        <a href="#" class="brand-logo"><img src="images/logo.png" style="width:29%;" alt="#"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="sass.html">About</a></li>
           <li><a href="badges.html">Home</a></li>
@@ -28,11 +39,9 @@
   </header>
 
   <div class="parallax-container">
-       <div class="parallax"><img src="images/sumaya.jpg">
-       </div>
-     </div>
-
-
+    <div class="parallax"><img src="images/sumaya.jpg">
+    </div>
+  </div>
   <br><br>
   <div class="row">
     <div class="container">
@@ -47,10 +56,8 @@
       </div>
     </div>
   </div>
-
-
   <div class="row">
-    <div class="col s12 offset-m1 m10 collection blue-text">
+    <div class="col s12 offset-m1 m10 collection blue-text" id='move'>
       <a href="#!" class="collection-item blue-text" id='item1'>Materialize</a>
       <a href="#!" class="collection-item blue-text" id='item1'>Bootstrap</a>
       <a href="#!" class="collection-item blue-text" id='item1'>Jquery</a>
@@ -59,13 +66,12 @@
   </div>
 
   <div class="parallax-container">
-      <div class="parallax"><img src="images/sumaya.jpg"></div>
-    </div>
-<br><br>
-    <div class="row">
+    <div class="parallax"><img src="images/sumaya.jpg"></div>
+  </div>
+  <br><br>
+  <div class="row">
     <div class="col s12 m4 center">
       <div class="col s6 m6" style="margin-bottom: 30px;">
-
         <div class="row"></div>
         <div class="row"><a class="waves-effect waves-light btn #3f51b5 indigo" onclick='saluda(1)'>Press</a></div>
         <div class="row"></div>
@@ -102,26 +108,24 @@
       </div>
     </div>
 
-
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
-
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
+      $(document).ready(function() {
+        $('.parallax').parallax();
+      });
 
 
       const materialize = document.getElementById('item1')
-      materialize.addEventListener('click',function(){
-        if (materialize.style.display != 'none'){
-          materialize.innerHTML='There is anything information here for you'
-        }
-      else{
-        materialize.innerHTML='Materialize'
+      materialize.addEventListener('click', function() {
 
-      }
+        if (materialize.style.display != 'none') {
+        materialize.innerHTML='There is anything for you'
+        
+        } else {
+          materialize.innerHTML = 'checkout here'
+
+        }
       })
       // const bootstrap = document.getElementById('item2')
       // console.log(bootstrap)
@@ -179,8 +183,6 @@
           encabezado.style.display = "block"
         }
       })
-
-
     </script>
 </body>
 
