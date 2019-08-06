@@ -24,6 +24,7 @@ animation: myfirst 5s linear 2s infinite alternate;
 
   }
 </style> -->
+
 <body>
   <header>
     <nav>
@@ -121,15 +122,19 @@ animation: myfirst 5s linear 2s infinite alternate;
       tabla.addEventListener('click', function() {
 
         if (materialize.style.display != 'none') {
-        // materialize.innerHTML='There is anything for you'
-        materialize.style.display = 'none'
-        materialize.style.display = 'none'
-      } else {
-        materialize.style.display = 'block'
-        materialize.style.display = 'block'
+          materialize.style.display = 'none'
+          materialize.style.display = 'none'
+        } else {
+          materialize.style.display = 'block'
+          materialize.style.display = 'block'
 
         }
       })
+
+    const bootstrap = document.getElementById('item2')
+    bootstrap.addEventListener('click', function (){
+      bootstrap.innerHTML='there is anything for you here'
+    })
       // const bootstrap = document.getElementById('item2')
       // console.log(bootstrap)
       // const jquery = document.getElementById('item3')
