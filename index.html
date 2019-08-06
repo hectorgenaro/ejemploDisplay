@@ -131,10 +131,18 @@ animation: myfirst 5s linear 2s infinite alternate;
         }
       })
 
-    const bootstrap = document.getElementById('item2')
-    bootstrap.addEventListener('click', function (){
-      bootstrap.innerHTML='there is anything for you here'
-    })
+      const bootstrap = document.getElementById('item2')
+      const jquery = document.getElementById('item3')
+      jquery.addEventListener('click', function() {
+        let detona = 'click'
+        let ondetona = 'ondblclick'
+        if (detona) {
+          bootstrap.innerHTML = 'There is anything for you here'
+        } else  {
+          bootstrap.innerHTML = 'bootstrap'
+        }
+
+      })
       // const bootstrap = document.getElementById('item2')
       // console.log(bootstrap)
       // const jquery = document.getElementById('item3')
